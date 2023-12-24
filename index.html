@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mutiny Software Club</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="favicon.png">
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .centered-image {
+            max-width: 90%;
+            max-height: 90%;
+            display: block;
+        }
+
+
+.blurred-background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('welcome-to-mutiny.png');
+	background-size: cover;
+	background-position: center;
+	filter: blur(8px);
+	z-index: -1;
+}
+
+    </style>
+</head>
+<body>
+    <div class="blurred-background"></div>
+    <img src="welcome-to-mutiny.png" alt="Welcome to Mutiny" class="centered-image">
+</body>
+</html>
